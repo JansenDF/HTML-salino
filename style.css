@@ -20,10 +20,10 @@ img {
 /* Variáveis */
 :root {
 
-    --header-height: 4.5rem;
+    --header-height: 6.5rem;
     /* Color */
-    --hue: 159;
-    --base-color: hsl(var(--hue) 36% 57%);
+    --hue: 190;
+    --base-color: hsl(var(--hue) 80% 50%);
     --base-color-second: hsl(var(--hue) 65% 88%);
     --base-color-alt: hsl(var(--hue) 57% 53%);
     --title-color: hsl(var(--hue) 41% 10%);
@@ -100,7 +100,8 @@ body {
     top: 0;
     left: 0;
     z-index: 100;
-    background-color: var(--body-color);
+    background-color: white;
+    /* background-color: var(--body-color); */
     width: 100%;
 }
 
@@ -211,8 +212,7 @@ nav.show ul.grid {
 
 
 .logo {
-    font: 700 1.31rem var(--title-font);
-    color: var(--title-color);
+    height: 5.625rem;
 }
 
 .logo span {
@@ -334,6 +334,9 @@ nav.show ul.grid {
 #about .text {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+}
+#about .text p{
+    margin-bottom: 0.5rem;
 }
 
 /* Cards */
@@ -590,16 +593,30 @@ footer .social a:hover {
         grid-auto-flow: column;
     }
 
+    /* Benefits */
+
+    #benefits .container {
+        margin: 0 auto;
+    }
+
+    #benefits .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #benefits .card {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
     /* services */
 
     #services .container {
         margin: 0 auto;
     }
 
-    .cards {
+    #services .cards {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .card {
+    #services .card {
         padding-left: 3rem;
         padding-right: 3rem;
     }
